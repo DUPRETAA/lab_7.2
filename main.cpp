@@ -17,8 +17,8 @@ int triangle(int k, ...) {
     int *ptr=&k;
 
     while (k!=2) {
-        if (CheckTriangle(*(ptr+2), *(ptr+4), *(ptr+6))) res++;
-        ptr+=2;
+        if (CheckTriangle(*(ptr+1), *(ptr+2), *(ptr+3))) res++;
+        ptr++;
         k--;
     }
 
